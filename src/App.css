@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-footer {
+background-image: linear-gradient(#CEC8FF, white);
+padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jumbotron {
+margin: 0;
+padding: 30px;
+background-image: linear-gradient(to right, #01837D, #13A9C7, #55326F);
+color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron h4 {
+  font-family: script;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+background-color: #FFF;
+color: #000;
+}
+
+.pastoral,
+.pastoral:hover {
+  color: black;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.letter {
+  padding: 10px 20px;
 }
