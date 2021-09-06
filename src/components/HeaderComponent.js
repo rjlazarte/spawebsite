@@ -20,12 +20,12 @@ class Header extends Component {
     render() {
         return(
             <React.Fragment>
-                <Jumbotron fluid>
+                <Jumbotron fluid className="m-0 p-3 header-jumbotron">
                     <div className="container">
                         <div className="row">
                             <div className="col">
                                 <h1>Shepherd's Pasture Assembly</h1>
-                                <h4>where the weary finds rest...</h4>
+                                <h2>where the weary finds rest...</h2>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ class Header extends Component {
                         <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/spalogo.png" height="50" width="100%" alt="SPA Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="ml-auto">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         Home

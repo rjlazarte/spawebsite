@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Letter extends Component {
     render() {
         return(
-            <div className="letter">
+            <div className="letter my-4">
+                <hr className="hr-home"></hr>
                 <h5>Pastoral Letter</h5>
 
                 <p>Blessings in the Name of our Lord Jesus Christ!</p>
@@ -21,6 +22,7 @@ class Letter extends Component {
                 <p>God Bless You,</p>
 
                 <p>Pastor Noel</p>
+                <hr className="hr-home"></hr>
             </div>
         );
     }

@@ -3,22 +3,28 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 
 const items = [
   {
-    src: '../assets/images/deevo.jpg',
+    src: '../assets/images/deevo2.png',
     altText: 'DEEVO',
-    header: 'DEEVO',
-    caption: 'Youth & Young Adults'
+    header: '',
+    caption: ''
   },
   {
-    src: '../assets/images/worship.jpg',
+    src: '../assets/images/praise.jpg',
     altText: 'FRIDAY NIGHT WORSHIP',
-    header: 'FRIDAY NIGHT WORSHIP',
-    caption: 'Every First Friday of the Month'
+    header: '',
+    caption: ''
   },
   {
-    src: '../assets/images/mens.jpg',
+    src: '../assets/images/mens2.jpg',
     altText: "MEN'S MINISTRY",
-    header: "MEN'S MINISTRY",
-    caption: 'Breakfast, Worship & Word'
+    header: "",
+    caption: ''
+  },
+  {
+    src: '../assets/images/woe.jpg',
+    altText: "Word of Encouragement",
+    header: "",
+    caption: ""
   }
 ];
 
@@ -61,6 +67,7 @@ const Slides = (props) => {
       activeIndex={activeIndex}
       next={next}
       previous={previous}
+      className="m-4 mb-5"
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}

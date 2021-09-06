@@ -1,36 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-h1, h2, h3 {
+h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-family: "Allison", cursive;
+}
+
 .site-footer {
-background-image: linear-gradient(#CEC8FF, white);
+background-color: rgb(97, 97, 97);
+color: black;
+font-family: "Montserrat";
 padding: 20px 0;
 }
 
-.jumbotron {
-margin: 0;
-padding: 30px;
+.site-footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: rgb(165, 164, 164);
+}
+
+.hr-footer {
+  border-top: 3px solid rgb(165, 164, 164);
+  box-shadow: 1px 1px 5px #000;
+}
+
+.hr-home {
+  border-top: 3px solid #54326f94;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.header-jumbotron {
 background-image: linear-gradient(to right, #01837D, #13A9C7, #55326F);
 color: white;
 }
 
-.jumbotron h4 {
-  font-family: script;
-}
-
 .navbar {
-background-color: #FFF;
-color: #000;
+background-color: rgb(255, 255, 255);
 }
 
-.pastoral,
-.pastoral:hover {
-  color: black;
+.home-background{
+  background: linear-gradient(to right, #01837d75, #13a9c775), url("spa.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 400px;
+}
+
+.pastoral {
+  color: #000;
   text-decoration: none;
+}
+
+.pastoral:hover {
+  color: #000;
   text-decoration: underline;
 }
 

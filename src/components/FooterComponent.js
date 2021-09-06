@@ -4,26 +4,31 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
     return (
         <footer className="site-footer">
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
-                    <div className="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul className="list-unstyled">
+                    <div className="col-6 my-auto">
+                    <Link to ="/home"><img src="../assets/images/footer-logo.png" alt="footer logo" width="100px" /></Link>
+                        <ul className="list-unstyled mt-3">
                             <li><Link to ="/home">Home</Link></li>
                             <li><Link to ="/aboutus">About</Link></li>
                             <li><Link to ="/contactus">Contact Us</Link></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-sm-3 text-center">
-                        <h5>Social</h5>
-                        <a className="btn btn-social-icon btn-instagram" target="_blank" rel="noreferrer" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
-                        <a className="btn btn-social-icon btn-facebook" target="_blank" rel="noreferrer" href="https://www.facebook.com/SDShepherdsPasture"><i className="fa fa-facebook" /></a>{' '}
-                        <a className="btn btn-social-icon btn-twitter" target="_blank" rel="noreferrer" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
-                        <a className="btn btn-social-icon btn-google" target="_blank" rel="noreferrer" href="https://www.youtube.com/user/SanDiegoSPA"><i className="fa fa-youtube" /></a> 
+                    <div className="col-6 text-center my-auto">
+                        <h4>Follow Us</h4>
+                        <a className="btn btn-social-icon" target="_blank" rel="noreferrer" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
+                        <a className="btn btn-social-icon" target="_blank" rel="noreferrer" href="https://www.facebook.com/SDShepherdsPasture"><i className="fa fa-facebook" /></a>{' '}
+                        <a className="btn btn-social-icon" target="_blank" rel="noreferrer" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
+                        <a className="btn btn-social-icon" target="_blank" rel="noreferrer" href="https://www.youtube.com/user/SanDiegoSPA"><i className="fa fa-youtube" /></a> 
                     </div>
-                    <div className="col-sm-4 text-center">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+                    
+                    <hr width="100%" className="hr-footer" ></hr>
+
+                    <div className="col my-5">
+                        <p className="mb-0">7210 Lisbon St</p>
+                        <p className="mb-0">San Diego, CA 92114</p>
+                        <p className="mb-0"><a role="button" href="tel:+12065551234"><i className="fa fa-phone" /> 619.555.1234</a></p>
+                        <p><a role="button" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> spa@spa.com</a></p>
                     </div>
                 </div>
             </div>
